@@ -19,7 +19,7 @@ st.set_page_config(
 @st.cache_data
 def cargar_datos():
     # Cargar datos
-    df = pd.read_csv('data_cor.csv', sep=';', encoding='latin-1')
+    df = pd.read_csv('dashboard_cordoba/data_cor.csv', sep=';', encoding='latin-1')
     
     # Convertir DIVIPOLA a string
     df['divipola'] = df['divipola'].astype(str)
