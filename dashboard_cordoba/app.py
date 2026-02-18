@@ -1,5 +1,6 @@
 import json
 import warnings
+from pathlib import Path
 
 import geopandas as gpd
 import pandas as pd
@@ -8,6 +9,10 @@ import plotly.graph_objects as go
 import streamlit as st
 
 warnings.filterwarnings("ignore")
+
+BASE_DIR   = Path(__file__).parent
+DATA_PATH  = BASE_DIR / "data/data_cor.csv"
+SHAPE_PATH = BASE_DIR / "data/mun_cor.shp"
 
 # ── CONFIG DE PÁGINA ────────────────────────────────────────────────────────
 st.set_page_config(
