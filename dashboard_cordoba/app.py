@@ -1,7 +1,6 @@
 import json
 import warnings
 from pathlib import Path
-
 import geopandas as gpd
 import pandas as pd
 import plotly.express as px
@@ -11,11 +10,8 @@ import streamlit as st
 warnings.filterwarnings("ignore")
 
 BASE_DIR   = Path(__file__).parent
-DATA_PATH  = BASE_DIR / "data/data_cor.csv"
-SHAPE_PATH = BASE_DIR / "data/mun_cor.shp"
-
-st.write(str(BASE_DIR))
-st.write(str(DATA_PATH))
+DATA_PATH  = BASE_DIR / "data_cor.csv"
+SHAPE_PATH = BASE_DIR / "mun_cor.shp"
 # ── CONFIG DE PÁGINA ────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Dashboard ETV y Zoonosis – Córdoba",
