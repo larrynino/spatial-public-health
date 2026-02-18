@@ -40,8 +40,8 @@ st.markdown(
 )
 
 # ── CONSTANTES ───────────────────────────────────────────────────────────────
-DATA_PATH   = "data/data_cor.csv"
-SHAPE_PATH  = "data/mun_cor.shp"
+DATA_PATH   = BASE_DIR / "data_cor.csv"
+SHAPE_PATH  = BASE_DIR / "mun_cor.shp"
 COL_NOMBRE  = "mpio_cnmbr"   # ajusta si tu shapefile usa otro campo
 
 COLUMNAS_NUMERICAS = [
